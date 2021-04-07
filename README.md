@@ -20,7 +20,7 @@ será horário de almoço.</br>
 • Se o usuário acessar após às 17h, haverão 8 campos disponíveis, que ficarão
 disponíveis até às 23:59:59".</br>
 
-[Exemplo de execução do projeto com hora setada em 23:00]()</br>
+[Exemplo de execução do projeto com hora setada em 23:00](https://github.com/MatheusHeck2001/sistemaPontoAndroid/blob/main/screenAtPonto.png)</br>
 
 [Arquivo java com a lógica do projeto](https://github.com/MatheusHeck2001/sistemaPontoAndroid/blob/main/app/src/main/java/com/example/atividade5/MainActivity.java)</br>
 [Arquivo com o código XML da Activity](https://github.com/MatheusHeck2001/sistemaPontoAndroid/blob/main/app/src/main/res/layout/activity_main.xml)</br>
