@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Atividade5</string>
+    <string name="ponto">Sistema Ponto</string>
+    <string name="nome">Nome</string>
+    <string name="matricula">Matrícula</string>
+    <string name="departamento">Departamento</string>
+    <string name="lotacao">Lotação</string>
+    <string name="cargo">Cargo</string>
+    <string name="funcao">Função</string>
+    <string name="atividades">Atividades Realizadas</string>
+
+
+
+
+</resources>
