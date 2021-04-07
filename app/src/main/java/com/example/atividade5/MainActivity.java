@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
 
+        /**
+         * O horário entre 00:00 e 9:00 fica indisponível
+         * **/
         if (hour < 9 && hour >= 0){
             TextView nothing = new TextView(ll.getContext());
             nothing.setText("Fora do horário de lançamento.");
@@ -44,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
             nothing.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
             ll.addView(nothing);
         }
+
+        /**
+         * Switch para tratamento do horário de entrada do usuário no sistema
+         **/
         switch (hour){
             case 9:
                 et = new EditText(this);
@@ -96,6 +103,11 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 break;
+
+            /**
+             * O horário correspondente a 12:00 as 13:00, é considerado como horário de almoço
+             * Com isso, não é aeberto local para informar atividade
+             **/
             case 13:
                 for (int i = 5; i > 0; i--){
                     et = new EditText(this);
@@ -184,6 +196,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
 
+            /**
+             * Após as 18:00 e antes das 00:00, ficam abertos 8 campos para preenchimento
+             **/
             case (18):
                 count = 0;
                 for (int i = 10; i > 0; i--){
@@ -330,6 +345,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+        /**
+         * Função que cria um toast para "envio" dos dados
+         **/
         ImageButton send = findViewById(R.id.send);
         send.setOnClickListener(new View.OnClickListener() {
             @Override
